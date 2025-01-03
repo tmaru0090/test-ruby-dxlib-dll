@@ -11,5 +11,5 @@ kernel_require.rbなどでエラーになるため、
 下記のように、
 xcopy "E:\windows\dev-tools\Ruby33-x64\lib\ruby\3.3.0\rubygems\core_ext\" %COREEXT%  /E /I /H /Y
 のようにして各自のRubyインストーラーディレクトリ付属のcore_extをそのままコピーする必要あり。
-これするといけた。
-
+これするといけた。ただ、これはRuby33以前では必要ないほか、なぜかこのDxLibを使用するこのスクリプト実行では、
+neriでexe化後、そもそもエラーが出るため、Ruby33以降じゃないとダメっぽい
